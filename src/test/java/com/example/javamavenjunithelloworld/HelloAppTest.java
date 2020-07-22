@@ -72,8 +72,10 @@ public class HelloAppTest {
     @Test
     public void testDefaultArgument() {
         // Passing no arguments should work.
-        String[] args = {};
-        HelloApp.main(args);
+        // chubatova String[] args = {};
+        //chubatova HelloApp.main(args);
+        //chubatova:
+        fail("fail chubatova")
     }
 
     @Test

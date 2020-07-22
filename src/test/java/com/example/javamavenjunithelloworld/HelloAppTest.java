@@ -75,7 +75,7 @@ public class HelloAppTest {
         // chubatova String[] args = {};
         //chubatova HelloApp.main(args);
         //chubatova:
-        fail("fail chubatova")
+        fail("fail chubatova");
     }
 
     @Test

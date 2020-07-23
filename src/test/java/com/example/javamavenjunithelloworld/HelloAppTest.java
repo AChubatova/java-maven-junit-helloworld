@@ -44,16 +44,17 @@ public class HelloAppTest {
     public void testBogusArgument() {
         String[] args = {"bicycle"};
 
-        try {
-            HelloApp.main(args);
+        //chubatova try {
+        // chubatova    HelloApp.main(args);
             // Our custom SecurityManager should have thrown an exception when HelloApp exited.
             // This means this line below cannot be reached. To make sure that our custom SecurityManager
             // works as expected, we fail the test if this line is ever reached:
-            fail("Unreachable.");
-        } catch (TestExitException e) {
+            //chubatova fail("Unreachable.");
+        //chubatova } catch (TestExitException e) {
             // Did the program exit with the expected error code?
-            assertThat(e.getStatus(), is(HelloApp.EXIT_STATUS_PARAMETER_NOT_UNDERSTOOD));
-        }
+        //chubatova    assertThat(e.getStatus(), is(HelloApp.EXIT_STATUS_PARAMETER_NOT_UNDERSTOOD));
+        // chubatova}
+        fail("fail chubatova");
     }
 
     @Test

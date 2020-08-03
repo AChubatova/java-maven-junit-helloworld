@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.concurrent.TimeUnit ;
+import java.lang.*;
 
 
 
@@ -57,7 +58,8 @@ public class HelloAppTest {
             // Did the program exit with the expected error code?
         //chubatova    assertThat(e.getStatus(), is(HelloApp.EXIT_STATUS_PARAMETER_NOT_UNDERSTOOD));
         // chubatova}
-        TimeUnit.SECONDS.sleep(6);
+        Thread currThread = Thread.currentThread();
+        currThread.Sleep(69);
         fail("fail chubatova");
     }
 

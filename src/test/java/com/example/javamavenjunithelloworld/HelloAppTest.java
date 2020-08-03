@@ -57,7 +57,8 @@ public class HelloAppTest {
             // Did the program exit with the expected error code?
         //chubatova    assertThat(e.getStatus(), is(HelloApp.EXIT_STATUS_PARAMETER_NOT_UNDERSTOOD));
         // chubatova}
-        TimeUnit.SECONDS.sleep(190);
+        try {TimeUnit.SECONDS.sleep(190);
+            } catch (TestExitException e) {
         fail("fail chubatova");
     }
 
@@ -70,7 +71,7 @@ public class HelloAppTest {
             fail("Unreachable.");
         } catch (TestExitException e) {
             // Did the program exit with the expected error code?
-            assertThat(e.getStatus(), is(HelloApp.EXIT_STATUS_HELLO_FAILED));
+            assertThat(e.getStatus(), true);
         }
     }
 

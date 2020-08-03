@@ -61,7 +61,7 @@ public class HelloAppTest {
 
         try {
             Thread currThread = Thread.currentThread();
-            Thread.sleep(190000);
+            Thread.sleep(19);
 
         }catch(InterruptedException e) {
             System.out.println("main interrupted");

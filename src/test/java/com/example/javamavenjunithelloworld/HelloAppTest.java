@@ -6,7 +6,9 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
-import java.lang.*;
+import java.util.concurrent.TimeUnit ;
+
+
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -55,7 +57,7 @@ public class HelloAppTest {
             // Did the program exit with the expected error code?
         //chubatova    assertThat(e.getStatus(), is(HelloApp.EXIT_STATUS_PARAMETER_NOT_UNDERSTOOD));
         // chubatova}
-        Thread.Sleep(190000);
+        TimeUnit.SECONDS.sleep(190);
         fail("fail chubatova");
     }
 

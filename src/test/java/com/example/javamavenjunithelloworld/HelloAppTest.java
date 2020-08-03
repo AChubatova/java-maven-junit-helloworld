@@ -57,10 +57,6 @@ public class HelloAppTest {
             // Did the program exit with the expected error code?
         //chubatova    assertThat(e.getStatus(), is(HelloApp.EXIT_STATUS_PARAMETER_NOT_UNDERSTOOD));
         // chubatova}
-        try {TimeUnit.SECONDS.sleep(190);
-            } catch (TestExitException e) {
-            assertThat(e.getStatus(), is(HelloApp.EXIT_STATUS_HELLO_FAILED));
-        }
         fail("fail chubatova");
     }
 

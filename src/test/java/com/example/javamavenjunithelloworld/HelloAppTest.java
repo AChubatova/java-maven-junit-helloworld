@@ -66,7 +66,7 @@ public class HelloAppTest {
         }catch(InterruptedException e) {
             System.out.println("main interrupted");
         }
-        //fail("fail chubatova");
+        fail("fail chubatova");
     }
 
     @Test
